@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Success!</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" th:href="@{/style.css}" />
+</head>
+<body class="is-preload">
+
+<!-- Nav -->
+<nav id="nav">
+    <ul class="container">
+        <li><a th:href="@{/}">Home</a></li>
+        <li><a th:href="@{/pages/register}">SignUp</a></li>
+        <li><a th:href="@{/pages/signin}">Sign In</a></li>
+        <li><a th:href="@{/pages/inventory}">Inventory</a></li>
+    </ul>
+</nav>
+
+<h1>Congrats! Your order was successful!</h1>
+
+</body>
+</html>

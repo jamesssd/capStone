@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Sign Up!</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" th:href="@{/style.css}" />
+</head>
+<body class="is-preload">
+
+<!-- Nav -->
+<nav id="nav">
+  <ul class="container">
+    <li><a th:href="@{/}">Home</a></li>
+    <li><a th:href="@{/pages/register}">SignUp</a></li>
+    <li><a th:href="@{/pages/signin}">Sign In</a></li>
+    <li><a th:href="@{/pages/inventory}">Inventory</a></li>
+  </ul>
+</nav>
+
+<h1>Form</h1>
+<form action="#" th:action="@{/registerform}" th:object="${registerform}" method="post">
+  <p>First Name: <input type="text" th:field="*{firstname}" /></p>
+  <p>Last Name: <input type="text" th:field="*{lastname}" /></p>
+  <p>Email: <input type="text" th:field="*{email}" /></p>
+  <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+
+</body>
+</html>
